@@ -1,0 +1,25 @@
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+todos.Todo: (models.W042) Auto-created primary key used when not defining a primary key type, by default 'django.db.models.AutoField'.
+	HINT: Configure the DEFAULT_AUTO_FIELD setting or the TodosConfig.default_auto_field attribute to point to a subclass of AutoField, e.g. 'django.db.models.BigAutoField'.
+
+System check identified 1 issue (0 silenced).
+[08/Dec/2023 21:43:55] "GET /todos/ HTTP/1.1" 200 3541
+[08/Dec/2023 21:43:57] "POST /todos/24/update HTTP/1.1" 302 0
+[08/Dec/2023 21:43:57] "GET /todos/ HTTP/1.1" 200 3578
+[08/Dec/2023 21:43:57] "POST /todos/24/update HTTP/1.1" 302 0
+[08/Dec/2023 21:43:57] "GET /todos/ HTTP/1.1" 200 3541
+[08/Dec/2023 21:44:02] "POST /todos/23/update HTTP/1.1" 302 0
+[08/Dec/2023 21:44:02] "GET /todos/ HTTP/1.1" 200 3578
+[08/Dec/2023 21:44:05] "GET /todos/24/delete HTTP/1.1" 302 0
+[08/Dec/2023 21:44:05] "GET /todos/ HTTP/1.1" 200 2972
+[08/Dec/2023 21:44:11] "POST /todos/add/ HTTP/1.1" 302 0
+[08/Dec/2023 21:44:12] "GET /todos/ HTTP/1.1" 200 3562
+[08/Dec/2023 21:44:22] "POST /todos/add/ HTTP/1.1" 302 0
+[08/Dec/2023 21:44:22] "GET /todos/ HTTP/1.1" 200 4151
+[08/Dec/2023 21:44:41] "POST /todos/add/ HTTP/1.1" 302 0
+[08/Dec/2023 21:44:41] "GET /todos/ HTTP/1.1" 200 4746
+[08/Dec/2023 21:44:50] "POST /todos/add/ HTTP/1.1" 302 0
+[08/Dec/2023 21:44:50] "GET /todos/ HTTP/1.1" 200 5340
